@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h1>Capstone one</h1>
+<h1>Awesome Books</h1>
 
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
@@ -26,11 +26,32 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 Capstone one: Responsive website for communities events <a name="about-project"></a>
-This project is about creating a responsive website to showcase community event, activities and agenda.
+# 📖 Awesome books<a name="about-project"></a>
+"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
 <!-- > Describe your project in 1 or 2 sentences. -->
-Capstone one: mobile-first approach & responsive on desktop version and bigger size is the first capstone project in the process of experiences mimic real-world projects where we must apply what we learned throughout the entire Module, and are built with business specifications that will look really nice in our portfolio.
+### How to build the "Awesome books" website
+- 1: Manage books collection (plain JS with objects).
+- 2: Manage books collection (plain JS with classes) and add basic CSS.
+- 3: Create a complete website with navigation.
+
+Will start by building the core functionalities and ignoring how the website looks. At the very beginning the website will look similar to the UI below. Note that it is plain HTML with no styling, but it will allow to add and remove books from the list!
+
+<p align="center">
+  <img src="./images/awesome_books_basic_ui.png" alt="Basic UI" width="300px" />
+</p>
+
+Once have the code working, will play with refactoring it. In this step will also need to adhere to the layout presented in the wireframe, but i will choose the application's styling. So i initial ugly HTML will turn into something similar to this:
+
+<p align="center">
+  <img src="./images/awesome_books_core_elements.png" alt="Core elements" width="400px"  />
+</p>
+
+In the last step, will build a complete website with working navigation. When a user clicks on a link in the navigation bar, the content in the main section of the website changes (URL stays the same, though.) Again styling is my choice, but it is essential to adhere to the layout presented in the wireframe. my end result should look similar to this:
+
+<p align="center">
+  <img src="./images/awesome_books_full_website.png" alt="Full website" />
+</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -101,7 +122,7 @@ Capstone one: mobile-first approach & responsive on desktop version and bigger s
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- [Click here... Live demo link](https://fickryiman.github.io/capstone-project-one)
+- [Click here... Live demo link](https://fickryiman.github.io/awesome-books)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +146,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git git@github.com:fickryiman/capstone-project-one.git
+  git git@github.com:fickryiman/awesome-books.git
 ```
 
 
@@ -163,7 +184,7 @@ You can deploy this project using:
 GitHub Pages
 Example:
 ```sh
-git@github.com:fickryiman/capstone-project-one.git
+git@github.com:fickryiman/awesome-books.git
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -198,7 +219,7 @@ git@github.com:fickryiman/capstone-project-one.git
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [git@github.com:fickryiman/capstone-project-one.git](../../issues/).
+Feel free to check the [git@github.com:fickryiman/awesome-books.git](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

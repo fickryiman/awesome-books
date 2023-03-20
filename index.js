@@ -43,15 +43,6 @@ function loadBook(book) {
   divBook.appendChild(buttonBookRemove);
   divBook.appendChild(hrBookSeparation);
   bookContainer.appendChild(divBook);
-  // const bookContent = `
-  //   <div class="book">
-  //     <p class="book-title">Book Title: "${book.title}"</p>
-  //     <p class="book-author">Author By: ${book.author}</p>
-  //     <button class="book-remove">Remove</button>
-  //     <hr class="book-separation">
-  //   </div>
-  // `;
-  // bookContainer.innerHTML += bookContent;
 };
 
 function loadBooksInformation() {

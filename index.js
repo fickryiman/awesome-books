@@ -1,28 +1,9 @@
-const BooksCollection = [
-  {
-    title: 'In Search of Lost Time',
-    author: 'Marcel Proust',
-  },
-  {
-    title: 'Ulysses',
-    author: 'James Joyce',
-  },
-  {
-    title: 'Don Quixote',
-    author: 'Miguel de Cervantes',
-  },
-  {
-    title: 'One Hundred Years of Solitude',
-    author: 'Gabriel Garcia Marquez',
-  },
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-  },
-];
+import BooksCollectionStatic from 'BooksCollection';
 
+// Selecting the book container
 const bookContainer = document.querySelector('.book-container');
 
+// Creating each single book with respective properties
 function loadBook(book) {
   const divBook = document.createElement('div');
   divBook.className = 'book';
@@ -43,34 +24,28 @@ function loadBook(book) {
   divBook.appendChild(buttonBookRemove);
   divBook.appendChild(hrBookSeparation);
   bookContainer.appendChild(divBook);
-  // const bookContent = `
-  //   <div class="book">
-  //     <p class="book-title">Book Title: "${book.title}"</p>
-  //     <p class="book-author">Author By: ${book.author}</p>
-  //     <button class="book-remove">Remove</button>
-  //     <hr class="book-separation">
-  //   </div>
-  // `;
-  // bookContainer.innerHTML += bookContent;
 };
 
+// Creating the list for the books from the Parameterized Array
 function loadBooksInformation() {
   while (bookContainer.hasChildNodes()) {
     bookContainer.removeChild(bookContainer.firstChild);
   }
-
-  BooksCollection.forEach((bookCollection) => {
+  BooksCollectionStatic.forEach((bookCollection) => {
     loadBook(bookCollection);
   });
 }
 
+// Onload loading the Exisiting Book list
 window.onload = (event) => {
   loadBooksInformation();
 }
 
+// Remove the Book from the web broswer and from the Initial Parametrized Book's Array
 function removeBook(element) {
   // console.log('remove button clicked');
   element.parentElement.remove();
+  BooksCollection = BooksCollection.slice(0, 3);
 }
 
 const inputBookTitle = document.querySelector('#book-title');
@@ -80,11 +55,11 @@ console.log(inputBookTitle);
 console.log(inputBookAuthor);
 
 function addToLocalStorage() {
-  // const localStorageObject = {};
-  // localStorageObject.bookTitle = inputBookTitle.value;
-  // localStorageObject.bookAuthor = inputBookAuthor.value;
-  // localStorage.setItem('formInput', JSON.stringify(localStorageObject));
-  console.log('click add book button')
+  const localStorageObject = {};
+  localStorageObject.bookTitle = inputBookTitle.value;
+  localStorageObject.bookAuthor = inputBookAuthor.value;
+  localStorage.setItem('formInput', JSON.stringify(localStorageObject));
+  // console.log('click add book button')
 }
 
 const addBook = document.querySelector('.add-book');

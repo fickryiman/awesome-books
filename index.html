@@ -5,22 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Awesome Books</h1>
+  <h1><u>Awesome Books</u> </h1>
   <div class="book-container">
-    <div class="book">
-      <p>Book Title</p>
-      <p>Author Name</p>
-      <button>Remove</button>
-      <hr>
-    </div>
-    <div class="book">
-      <p>Book Title</p>
-      <p>Author Name</p>
-      <button>Remove</button>
-      <hr>
-    </div>
+    <!-- <div class="book">
+      <p class="book-title">Book Title</p>
+      <p class="book-author">Author Name</p>
+      <button class="book-remove" onclick="removeBook(this)">Remove</button>
+      <hr class="book-separation">
+    </div> -->
   </div>
+  <form action="" method="post">
+    <label for="book-title">
+      <input type="text" name="book-title" id="book-title" placeholder="Title" required>
+    </label>
+    <label for="book-author">
+      <input type="text" name="book-author" id="book-author" placeholder="Author" required>
+    </label>
+    <button type="submit" class="add-book">Add Book</button>
+  </form>
+  <script src="index.js"></script>
 </body>
 </html>

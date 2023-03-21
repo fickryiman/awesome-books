@@ -1,118 +1,55 @@
-const BooksCollection = [
-  {
-    title: 'In Search of Lost Time',
-    author: 'Marcel Proust',
-  },
-  {
-    title: 'Ulysses',
-    author: 'James Joyce',
-  },
-  {
-    title: 'Don Quixote',
-    author: 'Miguel de Cervantes',
-  },
-  {
-    title: 'One Hundred Years of Solitude',
-    author: 'Gabriel Garcia Marquez',
-  },
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-  },
-];
+// const myCollection = Object.assign(BooksCollection);
 
+// if (localStorage.getItem('Books') === null) {
+//   localStorage.setItem('Books', JSON.stringify(myCollection));
+// }
+
+let booksData = JSON.parse(localStorage.getItem('Books')) || [];
 const bookContainer = document.querySelector('.book-container');
-
-function loadBook(book) {
-  const divBook = document.createElement('div');
-  divBook.className = 'book';
-  const pBookTitle = document.createElement('p');
-  pBookTitle.className = 'book-title';
-  pBookTitle.innerText = `Book Title: "${book.title}"`;
-  const pBookAuthor = document.createElement('p');
-  pBookAuthor.className = 'book-author';
-  pBookAuthor.innerText = `Book Author: "${book.author}"`;
-  const buttonBookRemove = document.createElement('button')
-  buttonBookRemove.className = 'book-remove';
-  buttonBookRemove.innerText = 'Remove';
-  buttonBookRemove.setAttribute('onclick', 'removeBook(this)');
-  const hrBookSeparation = document.createElement('hr');
-  divBook.appendChild(pBookTitle)
-  divBook.appendChild(pBookAuthor);
-  divBook.appendChild(pBookAuthor);
-  divBook.appendChild(buttonBookRemove);
-  divBook.appendChild(hrBookSeparation);
-  bookContainer.appendChild(divBook);
-  // const bookContent = `
-  //   <div class="book">
-  //     <p class="book-title">Book Title: "${book.title}"</p>
-  //     <p class="book-author">Author By: ${book.author}</p>
-  //     <button class="book-remove">Remove</button>
-  //     <hr class="book-separation">
-  //   </div>
-  // `;
-  // bookContainer.innerHTML += bookContent;
-};
-
-function loadBooksInformation() {
-  while (bookContainer.hasChildNodes()) {
-    bookContainer.removeChild(bookContainer.firstChild);
-  }
-
-  BooksCollection.forEach((bookCollection) => {
-    loadBook(bookCollection);
-  });
-}
-
-window.onload = (event) => {
-  loadBooksInformation();
-}
-
-function removeBook(element) {
-  // console.log('remove button clicked');
-  element.parentElement.remove();
-}
-
+const formInputBook = document.querySelector('#form-add-book');
 const inputBookTitle = document.querySelector('#book-title');
 const inputBookAuthor = document.querySelector('#book-author');
 
-console.log(inputBookTitle);
-console.log(inputBookAuthor);
+renderBooks();
 
-function addToLocalStorage() {
-  // const localStorageObject = {};
-  // localStorageObject.bookTitle = inputBookTitle.value;
-  // localStorageObject.bookAuthor = inputBookAuthor.value;
-  // localStorage.setItem('formInput', JSON.stringify(localStorageObject));
-  console.log('click add book button')
+formInputBook.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const title = inputBookTitle.value;
+  const author = inputBookAuthor.value;
+  if (title && author) {
+    addBook(title, author);
+    renderBooks();
+    formInputBook.reset();
+  }
+});
+
+bookContainer.addEventListener('click', (e) => {
+  if (e.target.matches('.button-remove-book')) {
+    const bookIndex = e.target.dataset.index;
+    console.log(`bookIndex: ${bookIndex}`);
+    removeBook(bookIndex);
+    renderBooks();
+  }
+});
+
+function addBook(title, author) {
+  booksData.push({ title, author });
+  localStorage.setItem('Books', JSON.stringify(booksData));
 }
 
-const addBook = document.querySelector('.add-book');
+function removeBook(index) {
+  booksData = booksData.filter((book, i) => i !== +index);
+  localStorage.setItem('Books', JSON.stringify(booksData));
+}
 
-function addBookInformation() {
-  const divBook = document.createElement('div');
-  divBook.className = 'book';
-  const pBookTitle = document.createElement('p');
-  pBookTitle.className = 'book-title';
-  pBookTitle.innerText = `Book Title: "${inputBookTitle.value}"`;
-  const pBookAuthor = document.createElement('p');
-  pBookAuthor.className = 'book-author';
-  pBookAuthor.innerText = `Book Author: "${inputBookAuthor.value}"`;
-  const buttonBookRemove = document.createElement('button');
-  buttonBookRemove.className = 'book-remove';
-  buttonBookRemove.innerText = 'Remove';
-  buttonBookRemove.setAttribute('onclick', 'removeBook(this)');
-  const hrBookSeparation = document.createElement('hr');
-  divBook.appendChild(pBookTitle)
-  divBook.appendChild(pBookAuthor);
-  divBook.appendChild(pBookAuthor);
-  divBook.appendChild(buttonBookRemove);
-  divBook.appendChild(hrBookSeparation);
-  bookContainer.appendChild(divBook);
+
+function renderBooks() {
+  bookContainer.innerHTML = booksData.map((book, i) => `
+                              <div class="book">
+                                <p class="book-title">Book Title: ${book.title}</p>
+                                <p class="book-author">Book Author: ${book.title}</p>
+                                <button class="button-remove-book" data-index="${i}">Remove</button>
+                                <hr class="book-separation">
+                              </div>
+                            `).join('');
 };
-
-addBook.addEventListener('click', (e) => {
-  addToLocalStorage();
-  addBookInformation();
-  e.preventDefault();
-});

@@ -1,5 +1,5 @@
 // Declaring a Parameterized Array of Exisiting Books
-let BooksCollection = [
+const BooksCollection = [
   {
     title: 'In Search of Lost Time',
     author: 'Marcel Proust',
@@ -21,5 +21,3 @@ let BooksCollection = [
     author: 'F. Scott Fitzgerald',
   },
 ];
-
-module.exports = {BooksCollection};

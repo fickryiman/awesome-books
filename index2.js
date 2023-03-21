@@ -57,7 +57,7 @@ function renderBookList() {
       (book, i) => `
     <li>
       ${book.title} by ${book.author}
-      <button class="remove-btn" data-index="${i}">Remove Book</button>
+      <button class="rm-btn" data-index="${i}">Remove Book</button>
     </li>
   `
     )

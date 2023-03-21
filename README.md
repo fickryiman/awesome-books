@@ -122,7 +122,7 @@ In the last step, will build a complete website with working navigation. When a 
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- [Click here... Live demo link](https://fickryiman.github.io/awesome-books)
+- Click the following url for [... LIVE DEMO ...](https://fickryiman.github.io/awesome-books)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

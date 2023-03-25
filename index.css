@@ -1,17 +1,190 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Lato', sans-serif;
+main {
+  min-height: 90vh;
 }
 
-li {
+.navbar {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar h2 {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-a {
+.link-click {
   text-decoration: none;
-} */
+}
+
+.separator {
+  border-left: 2px solid;
+}
+
+.datetime {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.bookslist-container {
+  padding: 2px 5px 2px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 3px;
+}
+
+hr {
+  margin-top: 5px;
+  width: 300px;
+}
+
+#remove-btn,
+#book-list,
+#book-title,
+#book-author,
+#book-added-btn {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+
+.book-container {
+  border: 2px solid rgb(61, 58, 58);
+  box-shadow: 0 20px 20px -20px #a8a5a5;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#display-books {
+  margin-bottom: 70px;
+}
+
+.separation-book-form {
+  margin: -50px auto 2vw;
+  border: none;
+  width: 20%;
+  height: 50px;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+}
+
+.form-title {
+  padding-top: 1vw;
+}
+
+.grey {
+  background: #cfceceb9;
+}
+
+ul {
+  margin: 0;
+}
+
+#book-list {
+  margin: 0;
+  padding: 0;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#add-form {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: center;
+  width: auto;
+}
+
+.add-book-btn {
+  align-self: flex-end;
+  background: #fff;
+  box-shadow: 3px 5px #393939;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+#remove-btn {
+  font-size: 15px;
+  background: #fff;
+  box-shadow: 3px 5px #393939;
+  margin-top: 3px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  padding: 5px 10px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.contact-info {
+  line-height: 0.9cm;
+  margin-left: -7vw;
+}
+
+#footer {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  position: sticky;
+  bottom: 0;
+  width: 98.6%;
+  background: #fff;
+  margin-bottom: 0;
+}

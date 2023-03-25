@@ -1,31 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Books</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <h1><u>Awesome Books</u> </h1>
-  <div class="book-container">
-    <!-- <div class="book">
-      <p class="book-title">Book Title</p>
-      <p class="book-author">Author Name</p>
-      <button class="book-remove" onclick="removeBook(this)">Remove</button>
-      <hr class="book-separation">
-    </div> -->
-  </div>
-  <form action="" method="post">
-    <label for="book-title">
-      <input type="text" name="book-title" id="book-title" placeholder="Title" required>
-    </label>
-    <label for="book-author">
-      <input type="text" name="book-author" id="book-author" placeholder="Author" required>
-    </label>
-    <button type="submit" class="add-book">Add Book</button>
-  </form>
-  <script src="index.js"></script>
-</body>
-</html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <main>
+      <header id="header">
+        <div class="navbar">
+          <h2>Awesome Books</h2>
+          <ul class="nav-links">
+            <li><a href="#display-book" class="list link-click" onclick="onlyDisplayBook()">List</a></li>
+            <div class="separator"></div>
+            <li><a href="#input-book" class="add link-click" onclick="onlyDisplayInputBook()">Add new</a></li>
+            <div class="separator"></div>
+            <li><a href="#contact" class="contact link-click" onclick="onlyDisplayContact()">Contact<a></a></li>
+          </ul>
+        </div>
+        <p class="datetime"><span id="datetime"></span></p>
+      </header>
+
+      <section id="display-books">
+        <h1>All awesome books</h1>
+        <div class="book-container">
+          <ul id="book-list"></ul>
+        </div>
+      </section>
+
+      <hr class="separation-book-form" id="separation-book-form">
+
+      <section id="input-book">
+        <div class="form-input">
+          <h1 class="form-title">Add a new book</h1>
+          <form action="" method="post" id='add-form'>
+            <label for="book-title">
+              <input  type="text" 
+                      name="book-title" 
+                      id="book-title" 
+                      placeholder="Title" 
+                      required
+                      size="35%"
+                      minlength="4"
+                      maxlength="100">
+            </label>
+            <label for="book-author">
+              <input  type="text" 
+                      name="book-author" 
+                      id="book-author" 
+                      placeholder="Author" 
+                      required
+                      size="35%"
+                      minlength="4"
+                      maxlength="100">
+            </label>
+            <button type="submit" class="add-book-btn" id="book-added-btn">
+              Add
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-page">
+          <h3>Contact information</h3>
+          <p class="contact-details">
+            Do you have any questions or you just want to say "Hello"?<br />
+            You can reach out to us!
+          </p>
+          <ul class="contact-info">
+            <li>Our email: fickry.iman@gmail.com</li>
+            <li>Our phone number: +62 853 056 700 89</li>
+            <li>Our address: Batam, Indonesia</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>Copyright all rights reserved</p>
+    </footer>
+    
+    <script src="book.js"></script>
+  </body>
+  </html>

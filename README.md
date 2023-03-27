@@ -36,8 +36,6 @@
 - 3: Create a complete website with navigation.
 - 4: Using Javascript Class
 - 5: Refactor code with ES6 module
-- 4: Using Javascript Class
-- 5: Refactor code with ES6 module
 
 Will start by building the core functionalities and ignoring how the website looks. At the very beginning the website will look similar to the UI below. Note that it is plain HTML with no styling, but it will allow to add and remove books from the list!
 
@@ -126,7 +124,7 @@ In the last step, will build a complete website with working navigation. When a 
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- Click the following url for [... live demo ...](https://fickryiman.github.io/Books-Awesome/)
+- Click the following url for [... Live Demo ...](https://fickryiman.github.io/awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,6 +178,7 @@ To run tests, run the following command:
 Run Github Actions Test
 ```sh
   npx stylelint "**/*.{css,scss}"
+  npx eslint .
 ```
 
 ### Deployment
@@ -232,7 +231,7 @@ Feel free to check the [git@github.com:fickryiman/awesome-books.git](../../issue
 
 <!-- > Write a message to encourage readers to support your project -->
 
-If you like this project please follow me on GitHub: [@fickryiman](https://github.com/fickryiman) or connect on LinkedIn: [fickry-bil-iman](https://www.linkedin.com/in/fickry-bil-iman).
+If you like this project please follow me on my GitHub: [@fickryiman](https://github.com/fickryiman) or connect on my LinkedIn: [@fickry-bil-iman](https://www.linkedin.com/in/fickry-bil-iman).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

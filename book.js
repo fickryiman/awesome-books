@@ -1,6 +1,6 @@
-import Book from './modules/bookClass.js'
-import BookCRUD from './modules/bookCrudClass.js'
-import Interface from './modules/interfaceClass.js'
+import Book from './modules/bookClass.js';
+import BookCRUD from './modules/bookCrudClass.js';
+import Interface from './modules/interfaceClass.js';
 import { onlyDisplayBook, onlyDisplayInputBook, onlyDisplayContact } from './modules/onlyDisplay.js';
 
 document.addEventListener('DOMContentLoaded', Interface.renderBooks);

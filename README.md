@@ -34,6 +34,8 @@
 - 1: Manage books collection (plain JS with objects).
 - 2: Manage books collection (plain JS with classes) and add basic CSS.
 - 3: Create a complete website with navigation.
+- 4: Using Javascript Class
+- 5: Refactor code with ES6 module
 
 Will start by building the core functionalities and ignoring how the website looks. At the very beginning the website will look similar to the UI below. Note that it is plain HTML with no styling, but it will allow to add and remove books from the list!
 
@@ -71,6 +73,7 @@ In the last step, will build a complete website with working navigation. When a 
   <summary>Server Side / Back-End</summary>
   <ul>
     <li><a href="https://www.json.org/json-en.html">JSON</a></li>
+    <li><a href="http://es6-features.org/">ES6</a></li>
     <!-- <li><a href=""> - </a></li>
     <li><a href=""> - </a></li> -->
   </ul>
@@ -101,7 +104,6 @@ In the last step, will build a complete website with working navigation. When a 
       <ul>
         <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
         <li><a href="https://desktop.github.com/">Github Desktop</a></li>
-        <li><a href="https://www.behance.net/">Behance</a></li>
         <!-- <li><a href="https://www.figma.com/">Figma</a></li> -->
       </ul>
   </details>

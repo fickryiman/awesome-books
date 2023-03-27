@@ -13,5 +13,5 @@ export default BookCRUD = {
     let booksCollection = BookCRUD.readBook();
     booksCollection = booksCollection.filter((book, ref) => ref !== +index);
     localStorage.setItem('BOOKS', JSON.stringify(booksCollection));
-  }
-}
+  },
+};

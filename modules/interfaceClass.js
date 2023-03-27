@@ -1,6 +1,8 @@
 import BookCRUD from './bookCrudClass.js';
 
+/* eslint-disable no-unused-vars */
 let Interface;
+
 export default Interface = {
   renderBooks: () => {
     const bookList = document.getElementById('book-list');
@@ -36,5 +38,5 @@ export default Interface = {
                               </button>        
                             </div>
                           `)).join('');
-  }
-}
+  },
+};

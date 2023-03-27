@@ -1,6 +1,4 @@
-let BookCRUD;
-
-export default BookCRUD = {
+const BookCRUD = {
   readBook: () => {
     const booksCollection = localStorage.getItem('BOOKS') === null ? [] : JSON.parse(localStorage.getItem('BOOKS'));
     return booksCollection;
@@ -16,3 +14,5 @@ export default BookCRUD = {
     localStorage.setItem('BOOKS', JSON.stringify(booksCollection));
   },
 };
+
+export default BookCRUD;

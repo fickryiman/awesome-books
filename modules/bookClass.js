@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-let Book;
-
-export default Book = (title, author) => ({
+const Book = (title, author) => ({
   title, author,
 });
+
+export default Book;

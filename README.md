@@ -122,7 +122,7 @@ In the last step, will build a complete website with working navigation. When a 
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- Click the following url for [... live demo ...](https://fickryiman.github.io/Books-Awesome/)
+- Click the following url for [... Live Demo ...](https://fickryiman.github.io/Books-Awesome/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,10 +199,6 @@ git@github.com:fickryiman/awesome-books.git
 - GitHub: [@fickryiman](https://github.com/fickryiman)
 - Facebook: [@fickry.bil.iman](https://www.facebook.com/fickry.bil.iman)
 - LinkedIn: [fickry-bil-iman](https://www.linkedin.com/in/fickry-bil-iman)
-
-👤 **Author 2**
-
-- GitHub: [@RHK-MICROVERSE](https://github.com/RHK-MICROVERSE)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

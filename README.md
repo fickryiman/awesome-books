@@ -116,7 +116,7 @@ In the last step, will build a complete website with working navigation. When a 
 - Button Interactions (i.e. hover, etc.)
 - Attractive Images & Design
 - Modal/dialog
-- Dynamic page (data is retrieved from JSON file)
+- Dynamic page (data is retrieved from localstorage JSON)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

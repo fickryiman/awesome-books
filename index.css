@@ -8,6 +8,11 @@ main {
   min-height: 90vh;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar {
   border: 2px solid;
   display: flex;
@@ -27,10 +32,6 @@ main {
   gap: 30px;
   font-size: 20px;
   cursor: pointer;
-}
-
-.link-click {
-  text-decoration: none;
 }
 
 .separator {

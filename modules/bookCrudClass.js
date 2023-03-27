@@ -1,4 +1,5 @@
 let BookCRUD;
+
 export default BookCRUD = {
   readBook: () => {
     const booksCollection = localStorage.getItem('BOOKS') === null ? [] : JSON.parse(localStorage.getItem('BOOKS'));

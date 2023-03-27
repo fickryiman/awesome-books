@@ -4,4 +4,3 @@ let Book;
 export default Book = (title, author) => ({
   title, author,
 });
-

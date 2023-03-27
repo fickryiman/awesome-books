@@ -1,6 +1,6 @@
- import BookCRUD from "./bookCrudClass.js";
- 
- export default class Interface {
+import BookCRUD from './bookCrudClass.js';
+
+export default class Interface {
   static renderBooks() {
     const bookList = document.getElementById('book-list');
     const booksCollection = BookCRUD.readBook();

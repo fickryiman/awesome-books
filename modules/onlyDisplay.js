@@ -3,7 +3,7 @@ const onlyDisplayBook = () => {
   document.getElementById('separation-book-form').style.display = 'none';
   document.getElementById('input-book').style.display = 'none';
   document.getElementById('contact').style.display = 'none';
-}
+};
 
 /* eslint-disable no-unused-vars */
 const onlyDisplayInputBook = () => {
@@ -11,7 +11,7 @@ const onlyDisplayInputBook = () => {
   document.getElementById('display-books').style.display = 'none';
   document.getElementById('separation-book-form').style.display = 'none';
   document.getElementById('contact').style.display = 'none';
-}
+};
 
 /* eslint-disable no-unused-vars */
 const onlyDisplayContact = () => {
@@ -19,6 +19,6 @@ const onlyDisplayContact = () => {
   document.getElementById('display-books').style.display = 'none';
   document.getElementById('separation-book-form').style.display = 'none';
   document.getElementById('input-book').style.display = 'none';
-}
+};
 
-export { onlyDisplayBook, onlyDisplayInputBook, onlyDisplayContact }
+export { onlyDisplayBook, onlyDisplayInputBook, onlyDisplayContact };

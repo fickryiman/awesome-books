@@ -15,6 +15,7 @@ addForm.addEventListener('submit', (e) => {
   const title = titleInput.value;
   const author = authorInput.value;
   const book = Book(title, author);
+
   if (title && author) {
     BookCRUD.createBook(book);
     Interface.renderBooks();

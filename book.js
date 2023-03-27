@@ -2,7 +2,7 @@ import Book from './modules/bookClass.js';
 import BookCRUD from './modules/bookCrudClass.js';
 import Interface from './modules/interfaceClass.js';
 import { onlyDisplayBook, onlyDisplayInputBook, onlyDisplayContact } from './modules/onlyDisplay.js';
-import { DateTime } from './node_modules/luxon/src/luxon.js'
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 document.addEventListener('DOMContentLoaded', Interface.renderBooks);
 

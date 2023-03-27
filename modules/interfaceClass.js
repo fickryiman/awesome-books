@@ -1,7 +1,8 @@
 import BookCRUD from './bookCrudClass.js';
 
-export default class Interface {
-  static renderBooks() {
+let Interface;
+export default Interface = {
+  renderBooks: () => {
     const bookList = document.getElementById('book-list');
     const booksCollection = BookCRUD.readBook();
     bookList.innerHTML = booksCollection.map((book, ref) => (ref % 2 === 0 ? ` 

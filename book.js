@@ -32,8 +32,9 @@ bookList.addEventListener('click', (e) => {
   }
 });
 
-const dt = new Date();
-document.getElementById('datetime').innerHTML = dt;
+const dt = DateTime.now();
+const dtFormat = dt.toLocaleString(DateTime.DATETIME_HUGE_WITH_SECONDS);
+document.getElementById('datetime').innerHTML = dtFormat;
 
 document.querySelector('.list').addEventListener('click', onlyDisplayBook);
 document.querySelector('.add').addEventListener('click', onlyDisplayInputBook);

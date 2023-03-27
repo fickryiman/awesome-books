@@ -1,6 +1,5 @@
-export default class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+const Book = (title, author) => ({
+  title, author,
+});
+
+export default Book;

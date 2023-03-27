@@ -178,6 +178,7 @@ To run tests, run the following command:
 Run Github Actions Test
 ```sh
   npx stylelint "**/*.{css,scss}"
+  npx eslint .
 ```
 
 ### Deployment
@@ -230,7 +231,7 @@ Feel free to check the [git@github.com:fickryiman/awesome-books.git](../../issue
 
 <!-- > Write a message to encourage readers to support your project -->
 
-If you like this project please follow me on GitHub: [@fickryiman](https://github.com/fickryiman) or connect on LinkedIn: [fickry-bil-iman](https://www.linkedin.com/in/fickry-bil-iman).
+If you like this project please follow me on my GitHub: [@fickryiman](https://github.com/fickryiman) or connect on my LinkedIn: [@fickry-bil-iman](https://www.linkedin.com/in/fickry-bil-iman).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,7 +239,8 @@ If you like this project please follow me on GitHub: [@fickryiman](https://githu
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 <!-- > Give credit to everyone who inspired your codebase. -->
-<!-- Credit to [Cindy Shin](https://www.behance.net/adagio07), [the author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) -->
+First thing first, I would like to say Alhamdulillah, Thanks to my Families, Microverse and Micronaut's, Reviewer's, Thank you for all of the experiences, lesson and everythings.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
